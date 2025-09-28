@@ -1,0 +1,613 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top right, #000000, #070707);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* LOGO */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.logo span {
+  background: linear-gradient(90deg, #5f575f, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.highlight-gold { color: gold; }
+
+/* VÍDEO */
+.video-container {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+.video-container .placeholder {
+  width: 100%;
+  height: 390px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* SUBTEXT */
+.subtext {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 20px 0;
+}
+
+/* CTA */
+.cta-btn {
+  background: linear-gradient(90deg, #00c851, #009432);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+/* COMPARATIVA */
+.comparative {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 80px auto 40px auto;
+  max-width: 1100px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.comparative .col {
+  flex: 1;
+  min-width: 300px;
+}
+.comparative h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.bad-list li,
+.good-list li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bad-list li::before {
+  content: "✖";
+  color: gold;
+}
+.good-list li::before {
+  content: "✔";
+  color: #00c851;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px auto;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+.about-image .placeholder {
+  width: 280px;
+  height: 320px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+.about-text .tag {
+  font-size: 0.9rem;
+  color: gold;
+}
+.about-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.about-text p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  margin: 80px auto;
+  max-width: 800px;
+}
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.testimonial {
+  display: none;
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 180px;
+}
+.testimonial.active {
+  display: block;
+}
+.testimonial .avatar {
+  width: 50px;
+  height: 50px;
+  background: #444;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+.testimonial h3 {
+  margin-bottom: 10px;
+  color: gold;
+}
+.testimonial-carousel button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial-carousel .prev { left: -40px; }
+.testimonial-carousel .next { right: -40px; }
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  h1 { font-size: 1.4rem; }
+  .video-container .placeholder { height: 220px; }
+  .comparative { flex-direction: column; text-align: center; }
+  .about { flex-direction: column; }
+  .testimonial-carousel .prev { left: 0; }
+  .testimonial-carousel .next { right: 0; }
+}
+
+/* Seção Mudança */
+.mudanca {
+  background: linear-gradient(180deg, #140020, #0a0010);
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.mudanca .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mudanca-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.mudanca-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mudanca-texto .tag {
+  color: gold;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.mudanca-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mudanca-texto p {
+  margin: 1px 0;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.btn-mudanca {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: #0f0;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-mudanca:hover {
+  background: #00c200;
+}
+
+/* Card genérico */
+.mudanca-imagem {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card-generico {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-generico .nome {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-generico .foto {
+  width: 500px;
+  height: 250px;
+  background: #555;
+  border-radius: 15px;
+  margin: 0 auto 15px;
+}
+
+.card-generico .icones span {
+  margin: 0 5px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Seção Bônus */
+.bonus {
+  background: #0a0010;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.bonus .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bonus .tag {
+  color: gold;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bonus h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bonus-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bonus-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.bonus-texto h3 {
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.bonus-texto p {
+  margin: 8px 0;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.bonus-tags {
+  margin-top: 15px;
+}
+
+.bonus-tags span {
+  display: inline-block;
+  margin: 5px 8px 0 0;
+  padding: 6px 12px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+
+.bonus-imagem {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.bonus-imagem .placeholder {
+  width: 250px;
+  height: 250px;
+  background: #444;
+  border-radius: 15px;
+}
+
+.preco {
+  padding: 80px 20px;
+  background: #0c0013;
+  color: #fff;
+  text-align: center;
+}
+.preco .tag {
+  color: gold;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.preco h2 {
+  font-size: 32px;
+  margin: 15px 0 40px;
+}
+.preco-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.card-oferta {
+  background: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.preco-antigo span {
+  text-decoration: line-through;
+  color: #555;
+}
+.preco-atual {
+  font-size: 22px;
+  color: green;
+  margin: 10px 0;
+}
+.preco-atual strong {
+  font-size: 28px;
+  color: rgb(0, 255, 0);
+}
+.preco-avista {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.btn-comprar {
+  display: block;
+  background: #00b020;
+  color: #fff;
+  padding: 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background 0.3s;
+}
+.btn-comprar:hover {
+  background: #008a1b;
+}
+.pagamentos img {
+  height: 25px;
+  margin: 0 5px;
+}
+.atencao {
+  font-size: 13px;
+  color: red;
+  margin-top: 10px;
+}
+.lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+}
+.garantia, .duvidas {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+.duvidas {
+  text-align: center;
+}
+.duvidas .foto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.btn-whatsapp {
+  display: inline-block;
+  background: #00c851;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.btn-whatsapp:hover {
+  background: #009f41;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0f0c1e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Seção Quem sou eu */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.section-title {
+    color: gold;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.about-text ul li::before {
+    content: "+ ";
+    color: gold;
+}
+
+.about-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* FAQ */
+.faq {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.accordion-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s;
+}
+
+.accordion-button:hover {
+    color: gold;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 10px 0;
+    color: #ccc;
+}
