@@ -7,8 +7,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top right, #000000, #070707);
-  color: #fff;
   text-align: center;
   padding: 20px;
 }
@@ -20,7 +18,7 @@ body {
   margin-bottom: 30px;
 }
 .logo span {
-  background: linear-gradient(90deg, #5f575f, #ffffff);
+  background: linear-gradient(90deg, #8b5cf6, #ffffff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -53,13 +51,13 @@ h1 {
 /* SUBTEXT */
 .subtext {
   font-size: 0.9rem;
-  color: #ccc;
+  color: #ffffff;
   margin: 20px 0;
 }
 
 /* CTA */
 .cta-btn {
-  background: linear-gradient(90deg, #00c851, #009432);
+  background: linear-gradient(90deg, #00A79D, #8b5cf6);
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
@@ -123,7 +121,7 @@ h1 {
 }
 .bad-list li::before {
   content: "✖";
-  color: gold;
+  color: red;
 }
 .good-list li::before {
   content: "✔";
@@ -179,7 +177,7 @@ h1 {
 }
 .testimonial {
   display: none;
-  background: #111;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -203,6 +201,11 @@ h1 {
 .testimonial h3 {
   margin-bottom: 10px;
   color: gold;
+}
+.testimonial p {
+  font-size: 0.95rem;
+  color: #000000;
+  line-height: 1.4;
 }
 .testimonial-carousel button {
   background: none;
@@ -229,9 +232,10 @@ h1 {
 
 /* Seção Mudança */
 .mudanca {
-  background: linear-gradient(180deg, #140020, #0a0010);
+  background: white;
   color: #fff;
   padding: 80px 20px;
+  border-radius: 15px;
 }
 
 .mudanca .container {
@@ -250,10 +254,12 @@ h1 {
 .mudanca-texto {
   flex: 1;
   min-width: 300px;
+  color: #000000;
 }
 
 .mudanca-texto .tag {
   color: gold;
+  font-size: 25px;
   font-weight: bold;
   display: block;
   margin-bottom: 15px;
@@ -267,14 +273,14 @@ h1 {
 .mudanca-texto p {
   margin: 1px 0;
   line-height: 1.6;
-  color: #ccc;
+  color: #000000;
 }
 
 .btn-mudanca {
   display: inline-block;
   margin-top: 20px;
   padding: 15px 25px;
-  background: #0f0;
+  background: linear-gradient(90deg, #00A79D, #8b5cf6);
   color: #000;
   font-weight: bold;
   text-decoration: none;
@@ -283,17 +289,18 @@ h1 {
 }
 
 .btn-mudanca:hover {
-  background: #00c200;
+background: linear-gradient(90deg, #00A79D, #8b5cf6);
 }
 
-/* Card genérico */
-.mudanca-imagem {
-  flex: 1;
-  min-width: 300px;
+.mudanca-imagem img {
+  width: 60%;
+  height: 50%;
+  object-fit: cover; /* Preenche sem distorcer, corta o excesso */
+  border-radius: 15px; /* Mantém os cantos arredondados */
 }
 
 .card-generico {
-  background: #1a1a1a;
+  background: #000000;
   border-radius: 15px;
   padding: 20px;
   text-align: center;
@@ -305,9 +312,8 @@ h1 {
 }
 
 .card-generico .foto {
-  width: 500px;
   height: 250px;
-  background: #555;
+  background: #000000;
   border-radius: 15px;
   margin: 0 auto 15px;
 }
@@ -320,7 +326,7 @@ h1 {
 
 /* Seção Bônus */
 .bonus {
-  background: #0a0010;
+
   color: #fff;
   padding: 80px 20px;
   text-align: center;
@@ -343,26 +349,15 @@ h1 {
   margin-bottom: 50px;
 }
 
-.bonus-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .bonus-card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1a1a1a;
+  background: #ffffff;
   border-radius: 15px;
   padding: 40px;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-.bonus-texto {
-  flex: 1;
-  text-align: left;
 }
 
 .bonus-texto h3 {
@@ -370,43 +365,19 @@ h1 {
   color: gold;
 }
 
+.bonus-texto h4 {
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+
 .bonus-texto p {
   margin: 8px 0;
   line-height: 1.6;
-  color: #ddd;
-}
-
-.bonus-tags {
-  margin-top: 15px;
-}
-
-.bonus-tags span {
-  display: inline-block;
-  margin: 5px 8px 0 0;
-  padding: 6px 12px;
-  border: 1px solid #555;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  color: #bbb;
-}
-
-.bonus-imagem {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  justify-content: center;
-}
-
-.bonus-imagem .placeholder {
-  width: 250px;
-  height: 250px;
-  background: #444;
-  border-radius: 15px;
+  color: #000000;
 }
 
 .preco {
   padding: 80px 20px;
-  background: #0c0013;
   color: #fff;
   text-align: center;
 }
@@ -446,7 +417,7 @@ h1 {
 }
 .preco-atual strong {
   font-size: 28px;
-  color: rgb(0, 255, 0);
+  color: green;
 }
 .preco-avista {
   margin-bottom: 20px;
@@ -454,7 +425,7 @@ h1 {
 }
 .btn-comprar {
   display: block;
-  background: #00b020;
+  background: linear-gradient(90deg, #00A79D, #8b5cf6);
   color: #fff;
   padding: 15px;
   border-radius: 30px;
@@ -464,7 +435,7 @@ h1 {
   transition: background 0.3s;
 }
 .btn-comprar:hover {
-  background: #008a1b;
+  background: linear-gradient(90deg, #00A79D, #8b5cf6);
 }
 .pagamentos img {
   height: 25px;
@@ -498,7 +469,7 @@ h1 {
 }
 .btn-whatsapp {
   display: inline-block;
-  background: #00c851;
+  background: linear-gradient(90deg, #00A79D, #8b5cf6);;
   color: #fff;
   padding: 10px 15px;
   border-radius: 25px;
@@ -611,3 +582,25 @@ body {
     padding: 10px 0;
     color: #ccc;
 }
+
+.linha-neon {
+  border: none;
+  height: 3px; /* espessura */
+  background: linear-gradient(90deg, transparent, #8b5cf6, transparent);
+  box-shadow: 0 0 10px #8b5cf6, 0 0 20px #7c3aed;
+  margin: 10px 0; /* espaço antes/depois */
+}
+
+.about-text p {
+  text-align: justify;
+}
+
+
+.mudanca-imagem img {
+  width: 60%;
+  height: 50%;
+  object-fit: cover; /* Preenche sem distorcer, corta o excesso */
+  border-radius: 15px; /* Mantém os cantos arredondados */
+}
+
+
