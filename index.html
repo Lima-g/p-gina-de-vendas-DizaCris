@@ -12,7 +12,7 @@
 
   <!-- HERO SECTION -->
   <div class="logo">MÉTODO <span>SUPERAR</span></div>
-  <p>+ de centenas de alunos que superaram o término do relacionamento</p>
+  <p>Centenas de alunos que superaram o término do relacionamento</p>
   <br>
   <h1>
     Aula: Descubra o passo a passo para
@@ -311,11 +311,37 @@
         <div class="accordion-item">
           <button class="accordion-button">Como eu acesso os produtos?</button>
           <div class="accordion-content">
-            <p>Após a compra você recebe login e senha para acessar tudo.</p>
+            <p>Após a compra você recebe login e senha imediato para acessar tudo.</p>
           </div>
         </div>
       </div>
     </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionButtons = document.querySelectorAll(".faq .accordion-button");
+
+  accordionButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const isActive = content.classList.contains("active");
+
+      // Fecha todos os outros
+      document.querySelectorAll(".faq .accordion-content").forEach(c => {
+        c.classList.remove("active");
+        c.style.maxHeight = null;
+      });
+
+      // Se o clicado não estava ativo, abre ele
+      if (!isActive) {
+        content.classList.add("active");
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+});
+</script>
+
 
     
 </body>

@@ -125,7 +125,7 @@ h1 {
 }
 .good-list li::before {
   content: "✔";
-  color: #00c851;
+  color: #000000;
 }
 
 /* ABOUT */
@@ -602,5 +602,17 @@ body {
   object-fit: cover; /* Preenche sem distorcer, corta o excesso */
   border-radius: 15px; /* Mantém os cantos arredondados */
 }
+
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.accordion-content.active {
+  padding-top: 10px;
+}
+
 
 
