@@ -1,11 +1,3 @@
-// Interação no botão CTA
-document.querySelectorAll(".cta-btn").forEach(btn => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    alert("Botão clicado! 🚀");
-  });
-});
-
 // Carrossel de depoimentos
 const testimonials = document.querySelectorAll(".testimonial");
 const prevBtn = document.querySelector(".prev");
@@ -30,13 +22,6 @@ nextBtn.addEventListener("click", () => {
 
 // Inicia no primeiro depoimento
 showTestimonial(current);
-
-
-// Exemplo simples: ação no botão
-document.querySelector(".btn-mudanca").addEventListener("click", (e) => {
-  e.preventDefault();
-  alert("🚀 Você clicou para aprender a fazer stories!");
-});
 
 
 // Exemplo simples de interação
