@@ -3,53 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5">
   <title>Método Superar</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- HERO SECTION -->
-  <div class="logo">MÉTODO <span>SUPERAR</span></div>
-  <p>Centenas de alunos que superaram o término do relacionamento</p>
-  <br>
-  <h1>
-    Aula: Descubra o passo a passo para
-    se recuperar de um término e <span class="highlight-purple">voltar a viver em
-      paz</span><br>
-  </h1>
-  <h3>Assista a gratuitamente e você vai aprender:</h3>
-  <ul class="benefits-list">
-    <p>O segredo para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em frente.
-    </p>
-    <br>
+  <header class="site-header">
+    <div class="logo" aria-label="Método Superar">MÉTODO <span>SUPERAR</span></div>
+    <!--<p class="kicker">Centenas de alunos que superaram o término do relacionamento</p>-->
+  </header>
 
-<div class="video-container">
-  <iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/mkjCPQxPj2E" 
-    title="YouTube video player" 
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+  <main id="conteudo">
 
-    <p class="subtext">
-      Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo desmoronando.
-    </p>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">
+        Aula: Descubra o passo a passo para se recuperar de um término e
+        <span class="highlight-purple">voltar a viver em paz</span>
+      </h1>
 
-    <a href="https://payfast.greenn.com.br/135447" class="cta-btn" target="_blank">Quero superar o término</a>
-    <!--
-  <hr class="linha-neon">
--->
+      <h2 class="hero-subtitle">Assista gratuitamente e você vai aprender:</h2>
+      <ul class="benefits-list">
+        <li>O segredo para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em
+          frente.</li>
+      </ul>
 
-    <!-- SEÇÃO COMPARATIVA -->
-    <section class="comparative">
+      <div class="video-container">
+        <div class="video-embed">
+          <iframe class="yt-embed" src="https://www.youtube.com/embed/mkjCPQxPj2E"
+            title="Aula Método Superar no YouTube" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <p class="subtext">
+        Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo desmoronando.
+      </p>
+
+      <p class="cta-wrap">
+        <a href="https://payfast.greenn.com.br/135447" class="cta-btn" target="_blank" rel="noopener">Entrar no Desafio
+          Superar</a>
+      </p>
+    </section>
+
+    <!-- Comparativo -->
+    <section class="comparative" aria-labelledby="comparative-title">
+      <h2 id="comparative-title" class="visually-hidden">Comparativo</h2>
+
       <div class="col">
-        <h2>Talvez você já tenha tentado fugir da dor...</h2>
+        <h3>Talvez você já tenha tentado fugir da dor...</h3>
         <ul class="bad-list">
           <li>Tentou reatar por desespero...</li>
           <li>Se jogou em distrações vazias...</li>
@@ -58,7 +64,7 @@
       </div>
 
       <div class="col">
-        <h2>Durante esse processo, você vai...</h2>
+        <h3>Durante esse processo, você vai...</h3>
         <ul class="good-list">
           <li>Reconstruir sua autoestima e voltar a se sentir seguro(a)...</li>
           <li>Aprender a lidar com suas emoções sem se afundar nelas...</li>
@@ -68,153 +74,160 @@
       </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <!-- CTA 2 -->
-    <!-- 
-  <div class="cta-center">
-    <a href="https://payfast.greenn.com.br/135447" class="cta-btn">Entrar no desafio Superar</a>
-  </div>
--->
-
-    <!-- SEÇÃO SOBRE / ESTRATÉGIA -->
-    <section class="about">
+    <!-- Sobre / Estratégia -->
+    <section class="about" aria-labelledby="about-estrategia-title">
       <div class="about-image">
-        <div class="placeholder"> <img src="./imagens/cris.png" alt=""></div>
+        <img src="./imagens/sentada-banco.jpg" alt="Cris Oliveira" loading="lazy">
       </div>
       <div class="about-text">
-        <h2>
-          Chega de se perder no escuro tentando se curar sozinho(a).<br>
+        <h2 id="about-estrategia-title">
+          Chega de se perder no escuro tentando se curar sozinho(a).
           Existe um caminho <span class="highlight-gold">seguro e transformador</span> para te conduzir de onde você
-          está
-          até a vida leve que deseja.
+          está até a vida leve que deseja.
         </h2>
-        <p>
-          Foi por isso que criei o Desafio Superar uma <strong>jornada de 20 dias</strong> com suporte emocional e
-          prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão.
-        </p>
+        <p>Foi por isso que criei o Desafio Superar, uma <strong>jornada de 20 dias</strong> com suporte emocional e
+          prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão.</p>
       </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <!-- DEPOIMENTOS -->
-    <section class="testimonials">
-      <h2><span class="highlight-gold">Depoimentos</span></h2>
+    <!-- Depoimentos -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title"><span class="highlight-gold">Depoimentos</span></h2>
       <p class="subtext">Já foram <span class="highlight-purple">mais de centenas de alunos</span> superando o término!
       </p>
-      <div class="testimonial-carousel">
-        <button class="prev">❮</button>
+      <div class="testimonial-carousel" role="region" aria-label="Carrossel de depoimentos">
+        <button class="prev" type="button" aria-label="Anterior">❮</button>
+
         <div class="testimonial active">
-          <div class="avatar">A</div>
-          <h3>Danielly Da Costa</h3>
-          <p>"Compraria seu curso um milhão de vezes, nunca conheci alguém com tanta clareza e prática quanto você."</p>
+          <div class="avatar" aria-hidden="true">A</div>
+          <h3 class="testimonial-name">Bianca Martins</h3>
+          <p>"Comecei a seguir a Cris no instagram no dia do término. Então ela falou do desafio e eu quis
+            participar.<br>
+            Tenho que superar não apenas um ex, mas a carência, dentre outras coisas. O desafio está sendo um suporte
+            mto bom para mim. "</p>
         </div>
+
         <div class="testimonial">
-          <div class="avatar">B</div>
-          <h3>João Pereira</h3>
-          <p>"O método mudou completamente a forma como eu vejo minhas emoções."</p>
+          <div class="avatar" aria-hidden="true">B</div>
+          <h3 class="testimonial-name">Augusto Cezar</h3>
+          <p>"Entrei no desafio através do instagram que foi aonde descobri a cris<br>
+            Eu estava me sentidno muito mal por conta de toda a situação, hoje estou muito melhor.<br>
+            E participar desse treinamento está sendo ótimo pra mim."</p>
         </div>
+
         <div class="testimonial">
-          <div class="avatar">C</div>
-          <h3>Maria Oliveira</h3>
-          <p>"Simples, prático e direto ao ponto. Recomendo para todos!"</p>
+          <div class="avatar" aria-hidden="true">C</div>
+          <h3 class="testimonial-name">Maria Oliveira</h3>
+          <p>"Tenho aprendido muito com seus conteúdos. Oque foi dito nessa caizinha ai é exatamente como penso e vejo
+            você. Faz pouco tempo que te sigo, mas é real tem sido exemplo de muitas coisas."</p>
         </div>
-        <button class="next">❯</button>
+
+        <div class="testimonial">
+          <div class="avatar" aria-hidden="true">C</div>
+          <h3 class="testimonial-name">Mateus Bastos</h3>
+          <p>"Top demais seus vídeos e seu story. Me ajudou bastante já sofri tbm com mulheres por aí e aprendi a dar
+            meu valor e vendo seus vídeos aprendi mais ainda.<br>
+            Me cuido faço meus treinos, corro atras de minhas metas hj em dia se não tiver reciprocidade e interesse eu
+            nem me envolvo mais, agradeço a seus vídeos."</p>
+        </div>
+
+        <div class="testimonial">
+          <div class="avatar" aria-hidden="true">C</div>
+          <h3 class="testimonial-name">Lucas Souza</h3>
+          <p>"Bom dia, Cris. Tudo bem? Passando para agradecer.<br>
+            Estou passando pelo momento mais difícil da minha vida, tive que terminar o único relacionamento que tive,
+            que durou onze anos, com a mãe do meu filho.<br>
+            Descobri coisas terríveis que ela estava fazendo do meu lado e também pelas minhas costas. Acabei perdendo tudo: A convivência com a mulher que mais amei nesse mundo, a convivência com meu pequeno de seis anos, apartamento, carro, e até meu emprego.<br>
+            Seus vídeos e posts tem me ajudado bastante.
+            Que Deus continue te abençoando, com certeza você é luz para muita gente."</p>
+        </div>
+
+        <button class="next" type="button" aria-label="Próximo">❯</button>
       </div>
     </section>
 
-    <!-- WHATSAPP -->
-    <a href="http://wa.me/5544991813288" target="_blank" class="whatsapp-float">💬</a>
+    <a href="http://wa.me/5544991813288" target="_blank" class="whatsapp-float" aria-label="Conversar no WhatsApp"
+      rel="noopener">💬</a>
 
-    <script src="script.js"></script>
+    <hr class="linha-neon" aria-hidden="true">
 
-    <hr class="linha-neon">
-
-    <!-- Seção Mudança -->
-    <section class="mudanca">
+    <!-- Mudança -->
+    <section class="mudanca" aria-labelledby="mudanca-title">
       <div class="container">
         <div class="mudanca-content">
-          <!-- Texto -->
           <div class="mudanca-texto">
             <span class="tag">Mudança</span>
-            <h2>Durante esse processo, você vai:</h2>
-            <p>
-              Reconstruir sua autoestima e voltar a se sentir seguro(a) com você mesmo(a).
-            </p>
-            <p>
-              Aprender a lidar com suas emoções sem se afundar nelas.
-            </p>
-            <p>
-              E o mais importante: voltar a respirar com leveza, sentindo orgulho de quem você está se tornando.
-            </p>
-            <p>
-              Esse não é só mais um conteúdo para “pensar positivo”.
-              É um convite real para sair da dor com consciência, profundidade e leveza.
-            </p>
-            <a href="https://payfast.greenn.com.br/135447" class="btn-mudanca" target="_blank">Entrar no desafio Superar</a>
+            <h2 id="mudanca-title">Durante esse processo, você vai:</h2>
+            <p>Reconstruir sua autoestima e voltar a se sentir seguro(a) com você mesmo(a).</p>
+            <p>Aprender a lidar com suas emoções sem se afundar nelas.</p>
+            <p>E o mais importante: voltar a respirar com leveza, sentindo orgulho de quem você está se tornando.</p>
+            <p>Esse não é só mais um conteúdo para “pensar positivo”. É um convite real para sair da dor com
+              consciência, profundidade e leveza.</p>
+            <a href="https://payfast.greenn.com.br/135447" class="btn-mudanca" target="_blank" rel="noopener">Entrar no
+              Desafio Superar</a>
           </div>
 
-          <!-- Imagem / Card genérico -->
           <div class="mudanca-imagem">
-            <div class="mudanca-imagem">
-              <img src="./imagens/foto roupa branca.png" alt="Imagem representativa">
+            <img src="./imagens/social-marrom.jpg" alt="Participante do desafio" loading="lazy">
           </div>
         </div>
       </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <!-- Seção Bônus -->
-    <section class="bonus">
+    <!-- Bônus -->
+    <section class="bonus" aria-labelledby="bonus-title">
       <div class="container">
-        <span class="tag">Bônus</span>
-        <h2>As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria com a Cris ao final do desafio.</h2>
+        <span class="tag"></span>
+        <h2 id="bonus-title">As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria com a Cris ao final
+          do desafio.</h2>
 
         <div class="bonus-list">
-          <!-- Card 1 -->
-          <div class="bonus-card">
+          <article class="bonus-card">
             <div class="bonus-texto">
               <h3>Durante 20 dias, você vai receber.</h3>
-              
-                <p>- Áudios diários que funcionam como um abraço em palavras.</p>
-                <p>- PDFs com atividades práticas para cada dia do desafio.</p>
-                <p>- Aulas curtas e profundas, desenhadas para transformar sua forma de pensar, sentir e reagir.</p>
-              <br>
+              <p>Áudios diários que funcionam como um abraço em palavras.</li>
+              <p>PDFs com atividades práticas para cada dia do desafio.</li>
+              <p>Aulas curtas e profundas, desenhadas para transformar sua forma de pensar, sentir e reagir.</li>
               <h4>O Desafio Superar é um processo de 20 dias para reconstruir sua força emocional após o fim de uma
-                relação mesmo que hoje você sinta que não tem energia nem pra sair da cama.</h4>
-              <div class="placeholder"></div>
+                relação, mesmo que hoje você sinta que não tem energia nem pra sair da cama.</h4>
+              <div class="placeholder" aria-hidden="true"></div>
             </div>
-          </div>
-
-
+          </article>
+        </div>
+      </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <!-- Seção Preço -->
-    <section class="preco">
+    <!-- Preço -->
+    <section class="preco" aria-labelledby="preco-title">
       <div class="container">
         <span class="tag">O começo para se reencontrar com quem você realmente é.</span>
-        <h2></h2>
+        <h2 id="preco-title"></h2>
 
         <div class="preco-content">
-          <!-- Card da Oferta -->
-          <div class="card-oferta">
+          <div class="card-oferta" aria-label="Oferta do Desafio Superar">
             <p class="preco-antigo">De <span>R$ 197</span></p>
             <p class="preco-atual">Por apenas 12x de <strong>R$ 13,06</strong></p>
             <p class="preco-avista">Ou R$ 127 à vista</p>
 
-            <a href="https://payfast.greenn.com.br/135447" class="btn-comprar" target="_blank">QUERO ENTRAR NO DESAFIO SUPERAR</a>
+            <a href="https://payfast.greenn.com.br/135447" class="btn-comprar" target="_blank" rel="noopener">Entrar no
+              Desafio SuperarR</a>
 
-            <div class="pagamentos">
-              <img src="https://www.feebpr.org.br/images/media/1378591390659bd491e540b.jpg" alt="Boleto">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+            <div class="pagamentos" aria-label="Formas de pagamento aceitas">
+
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa" loading="lazy">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard"
+                loading="lazy">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo%E2%80%94pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.svg"
-                alt="Pix">
+                alt="Pix" loading="lazy">
             </div>
 
             <p class="atencao">
@@ -222,42 +235,36 @@
             </p>
           </div>
 
-          <!-- Blocos laterais -->
-          <div class="lateral">
+          <aside class="lateral">
             <div class="garantia">
-              <h3>É risco zero</h3>
-              <p>Esse é o seu espaço de reconstrução.
-                E você merece fazer isso com leveza, não com dúvidas.
-              </p>
-              <p><strong>Você pode começar sem medo.
-                  Se em até 3 dias você sentir que o desafio não é pra você, é só pedir seu reembolso integral.</strong>
-              </p>
+              <p>Esse é o seu espaço de reconstrução. E você merece fazer isso com leveza, não com dúvidas.</p>
+              <p>Você pode começar sem medo. Se em até <strong>3 dias</strong> você sentir que o desafio não é pra você,
+                é só pedir seu reembolso integral.</p>
             </div>
 
             <div class="duvidas">
-              <img src="./imagens/perfil.jpg" alt="Atendente" class="foto">
+
               <h3>Ainda restou alguma dúvida?</h3>
               <p>Me chame e vamos conversar!</p>
-              <a href="http://wa.me/5544991813288" class="btn-whatsapp" target="_blank">Entre em contato.</a>
+              <a href="http://wa.me/5544991813288" class="btn-whatsapp" target="_blank" rel="noopener">Entre em
+                contato.</a>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <section class="about">
+    <!-- Sobre a Cris -->
+    <section class="about" aria-labelledby="about-cris-title">
       <div class="about-text">
         <span class="section-title">Quem é</span>
-        <h1><strong>Cris Oliveira</strong></h1>
-        <p>Assim como muitas pessoas, eu também já passei pela dor de um término que parecia não ter fim.
-        </p>
+        <h2 id="about-cris-title"><strong>Cris Oliveira</strong></h2>
+        <p>Assim como muitas pessoas, eu também já passei pela dor de um término que parecia não ter fim.</p>
         <p>Foram ciclos repetitivos de relações que me deixavam emocionalmente esgotada. Sempre terminava com culpa,
-          vazio
-          e aquela sensação de que eu não era suficiente</p>
-        <p>
-          Até que eu entendi: <strong> eu quisesse resultados diferentes, precisava fazer escolhas diferentes.</strong>
+          vazio e aquela sensação de que eu não era suficiente.</p>
+        <p>Até que eu entendi: <strong>eu quisesse resultados diferentes, precisava fazer escolhas diferentes.</strong>
         </p>
         <p>Foi quando mergulhei em livros, palestras, cursos e formações e comecei a construir um caminho de volta para
           mim mesma.</p>
@@ -265,89 +272,82 @@
             mulheres</strong> a superarem o luto emocional após o fim de uma relação e reconstruírem suas vidas com mais
           confiança, clareza e autoconhecimento.</p>
         <p>Com meus conteúdos nas redes sociais, <strong>já impactei milhões de pessoas</strong> com mensagens sobre
-          amor-próprio,
-          desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho ajudando
-          centenas de pessoas a reencontrarem sentido e força depois do fim.
-        </p>
-        <p>
-          O Desafio Superar nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim,
-          vida
-          depois do fim.<br>
-          E eu quero te mostrar esse caminho.
-        </p>
-
+          amor-próprio, desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho
+          ajudando centenas de pessoas a reencontrarem sentido e força depois do fim.</p>
+        <p>O Desafio Superar nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim,
+          vida depois do fim. E eu quero te mostrar esse caminho.</p>
       </div>
       <div class="about-image">
-        <img src="./imagens/perfil.jpg" alt="Luana Carolina">
+        <img src="./imagens/perfil.jpg" alt="Cris Oliveira" loading="lazy">
       </div>
     </section>
 
-    <hr class="linha-neon">
+    <hr class="linha-neon" aria-hidden="true">
 
-    <section class="faq">
+    <!-- FAQ -->
+    <section class="faq" aria-labelledby="faq-title">
       <span class="section-title">FAQ</span>
-      <h2>Perguntas Frequentes</h2>
+      <h2 id="faq-title">Perguntas Frequentes</h2>
+
       <div class="accordion">
         <div class="accordion-item">
-          <button class="accordion-button">Quais formas de pagamento?</button>
-          <div class="accordion-content">
+          <button class="accordion-button" id="faq-btn-1" aria-controls="faq-panel-1" aria-expanded="false">
+            Quais formas de pagamento?
+          </button>
+          <div class="accordion-content" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
             <p>Você pode pagar com cartão de crédito, Pix ou boleto bancário.</p>
           </div>
         </div>
+
         <div class="accordion-item">
-          <button class="accordion-button">O conteúdo é ao vivo?</button>
-          <div class="accordion-content">
-            <p>Sim, algumas aulas são ao vivo e outras gravadas.</p>
+          <button class="accordion-button" id="faq-btn-2" aria-controls="faq-panel-2" aria-expanded="false">
+            O conteúdo é ao vivo?
+          </button>
+          <div class="accordion-content" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+            <p>As aulas acontecem no grupo, com acompanhamento em tempo real. Todo o conteúdo fica disponível pelo
+              período do desafio e, se quiser, você pode baixar e guardar para assistir sempre que desejar.</p>
           </div>
         </div>
+
         <div class="accordion-item">
-          <button class="accordion-button">E se eu tiver dúvidas?</button>
-          <div class="accordion-content">
-            <p>Você pode enviar perguntas pelo suporte ou comentários da plataforma.</p>
+          <button class="accordion-button" id="faq-btn-3" aria-controls="faq-panel-3" aria-expanded="false">
+            E se eu tiver dúvidas?
+          </button>
+          <div class="accordion-content" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+            <p>Você terá suporte direto dentro do grupo. Não estará sozinho(a) poderá tirar dúvidas, compartilhar
+              experiências e receber orientação durante toda a jornada.
+            </p>
           </div>
         </div>
+
         <div class="accordion-item">
-          <button class="accordion-button">Até quando posso acessar as aulas?</button>
-          <div class="accordion-content">
-            <p>O acesso é vitalício após a compra.</p>
+          <button class="accordion-button" id="faq-btn-4" aria-controls="faq-panel-4" aria-expanded="false">
+            Até quando posso acessar as aulas?
+          </button>
+          <div class="accordion-content" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+            <p>O acesso é válido por todo o período do desafio. Mas se salvar as aulas no seu aparelho, elas ficam com
+              você para sempre.</p>
           </div>
         </div>
+
         <div class="accordion-item">
-          <button class="accordion-button">Como eu acesso os produtos?</button>
-          <div class="accordion-content">
-            <p>Após a compra você recebe login e senha imediato para acessar tudo.</p>
+          <button class="accordion-button" id="faq-btn-5" aria-controls="faq-panel-5" aria-expanded="false">
+            Como eu acesso os produtos?
+          </button>
+          <div class="accordion-content" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+            <p>Assim que a inscrição for confirmada, você receberá o link para entrar no grupo exclusivo. Tudo simples,
+              rápido e seguro.</p>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const accordionButtons = document.querySelectorAll(".faq .accordion-button");
+  <footer class="site-footer" aria-label="Rodapé">
+    <p>&copy; Método Superar</p>
+  </footer>
 
-  accordionButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const content = button.nextElementSibling;
-      const isActive = content.classList.contains("active");
-
-      // Fecha todos os outros
-      document.querySelectorAll(".faq .accordion-content").forEach(c => {
-        c.classList.remove("active");
-        c.style.maxHeight = null;
-      });
-
-      // Se o clicado não estava ativo, abre ele
-      if (!isActive) {
-        content.classList.add("active");
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
-});
-</script>
-
-
-    
+  <script src="script.js" defer></script>
 </body>
 
 </html>
